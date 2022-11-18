@@ -1,3 +1,7 @@
+*
+{
+    scroll-behavior: smooth;
+}
 
 :root
 {
@@ -14,10 +18,11 @@ body
     width: 100vw;
     height: 100vh;
     overflow:hidden;
+    
 }
 
 .flex-container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -32,7 +37,7 @@ body
     background: rgba(0,0, 0, 0.60); 
     background: slinear-gradient(to left top, rgba (0,0,0,rgba(0,0,0, 0.60), rgba(0,0, 0, 0.25)));
 border-radius: 30px;
-text-align: center;
+
     color: white;
     border-radius: 5 0px;
     margin: 22px 12px 12px 12px;
@@ -78,13 +83,16 @@ animation: slideDown 6s  linear infinite;
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
-.fb {
+.img {
    opacity: 60%;
     justify-items: center;
     align-items: center;
+    width: 200px;
+    height: 200px;
     
 }
- .fb:hover
+ .img:hover
  {
     opacity: 110%;
+    animation: 4s;
  }
